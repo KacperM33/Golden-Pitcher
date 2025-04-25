@@ -12,17 +12,62 @@ This project was completed as the final assignment for the *Computer Games Devel
 - [Tilemap](https://learn.unity.com/tutorial/introduction-to-tilemaps#)
 
 ## 🎮 Gameplay
-- The player must collect **Golden Pitchers** to progress through the story of the game. During the adventure, they can interact
-with NPCs, environmental elements and enter new chambers.<br>
+### 🔸 Main Menu
+The player starts on the main menu screen, where they can:
+- Start the game
+- Check the controls
+- Exit the game
 
-![image](https://github.com/user-attachments/assets/ec828d5c-89c9-48c0-bb45-33c33fe1ea20)
+![image](https://github.com/user-attachments/assets/39f249b9-9c64-4201-a848-017ebfec8a36)
 
-- While exploring the dark catacombs, the player encounters ghost that they can engage in combat with.<br>
+### 🔸 Controls
+Player controls are as follows:
+- Move up: **W**
+- Move down: **S**
+- Move right: **D**
+- Move left: **A**
+- Run: **Left Shift**
+- Interact: **E**
+- Attack: **Left Mouse Button**
 
-![image](https://github.com/user-attachments/assets/eff31a00-3170-4c8f-916b-c3ecc9b002e0)
+![image](https://github.com/user-attachments/assets/838206fc-907d-48ac-917e-1581f5d425b1)
 
-- The game features a single level, divided into various chambers, passages, and hidden nooks (including a secret chamber).<br>
-  A full map of the game is presented below:
+### 🔸 Game start
+When the player starts the game, they spawn in the game world. There is one map level, divided into chapters.. 
+<br>The goal is to collect **Golden Pitchers**, which are used to unlock gates and access new chambers until reaching the end of the game.
+
+![image](https://github.com/user-attachments/assets/0b89fa04-4072-4908-88ca-9aa852cb3602)
+
+### 🔸 User Interface
+The user interface is simple and includes two main elements at the top of the screen:
+1. **Health and Energy Bars** – The red bar shows health. When it reaches 0, the player dies. The green bar represents energy used for running. It depletes while sprinting and regenerates when the player stops.
+2. **Golden Pitchers Counter** – Displays the number of collected **Golden Pitchers**.
+
+![image](https://github.com/user-attachments/assets/6492437c-82cc-4554-bc19-6dff7d475df8)
+
+### 🔸 Interactions
+The player can interact with:
+- ***Bonfires*** - Restore health, create a respawn point at the current location, and revive all enemies.
+- ***NPCs*** - Non-player characters that offer information about the game world.
+- ***Golden Pitchers*** - Must be collected to progress through the game.
+- ***Gates*** - Block access to new chapters. The player needs a required number of **Golden Pitchers** to open them.
+
+![image](https://github.com/user-attachments/assets/5b307061-749e-4b5b-8d2b-0ebb23375450)
+
+### 🔸 Exploring through the world
+While exploring, the player encounters enemies in the form of dark ghosts. These ghosts vary in health points and damage stats.
+<br>Environmental elements and decorations can also obstruct the player's movement.
+<br><br>When an enemy spots the player, it begins to attack. The player can only fight **one enemy at a time**. 
+If more than one enemy engages, the player must retreat, break their aggro, and return to fight them one by one (or avoid them entirely).
+
+![image](https://github.com/user-attachments/assets/f3179d1e-90ab-42c9-8fbd-44114cfa29fd)
+
+### 🔸 Death
+When the player dies, a death screen appears. Choosing to respawn returns the player to the last bonfire they rested at.
+
+![image](https://github.com/user-attachments/assets/103cefee-73f7-4f49-b4e5-3ec61cba119b)
+
+### 🔸 Map
 
 ![image](https://github.com/user-attachments/assets/46ab0837-bf65-4590-a92c-86f7b0842bae)
 
